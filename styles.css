@@ -1,0 +1,304 @@
+/**
+ * 1. Import the font family from Google Fonts.
+ * 2. Apply the font family to the body element.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+/**
+ * 1. Set the default font family to 'Epilogue', sans-serif.
+ * 2. Set the default margin and padding to 0.
+ * 3. Set the box-sizing to border-box.
+ */
+* {
+    font-family: 'Epilogue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* Button Colors */
+    --Button-Header: #FAF8F6;
+    --Button-Header-Hover: #172339;
+    --Button-Intro:#172339;
+    --Button-Intro-Hover: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+    /* Font Colors Button */
+    --Color-Font-Button-header: #172339;
+    --Color-Font-Button: #FAF8F6;
+    /* Font color */
+    --Dark-Blue: #172339;
+    --Grey: #49566D;
+    --Cream-White: #FAF8F6;
+    --Cream: #F3EDE7;
+}
+
+/* Body Styles */
+body  {
+    width: 1440px;
+    background: var(--Cream-White);
+    padding: 50px 165px 75px 165px;
+    position: relative;
+    margin: 0 auto;
+}
+/* Header Styles */
+header {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-header{
+        font-family: Epilogue;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.444px; 
+    }
+    .button-header {
+        width: 219px;
+        height: 56px;
+        flex-shrink: 0; 
+        border-radius: 6px;
+        border: 1px solid var(--Dark-Blue);
+        background: var(--Button-Header);
+        color: var(--Color-Font-Button-header);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.16px; 
+        cursor: pointer;
+    }
+    .button-header:hover{
+        background: var(--Button-Header-Hover);
+        color: var(--Color-Font-Button);
+    }
+}
+
+/*  Section Services Styles */
+.services {
+    width: 100%;
+    height: 600px;
+    margin-top: 79px;
+    display: flex;
+
+    .curved-line{
+        width: 289px;
+        height: 39px;
+        position: absolute;
+        top: 218px;
+        left: 455px;
+    }
+    .services-infos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 635px;
+        height: 405px;
+        margin-top: 103px;
+
+        .services-titre {
+            width: 100%;
+            height: 156px;
+            color: var(--Dark-Blue);
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 78px;
+            letter-spacing: -1px;
+        }
+        span {
+            font-size: 74px;
+            font-style: normal; 
+            font-weight: 700;
+        }
+        .services-para {
+            width: 350px;
+            height: 96px;
+            margin-top: 40px;
+            color: var(--Grey);
+            font-size:18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0.1px;
+        }
+        .button-services-infos {
+            width: 256px;
+            height: 61px;
+            flex-shrink: 0;
+            margin-top: 52px;
+            border-radius: 6px; 
+            background: var(--Button-Intro);
+            color: var(--Color-Font-Button);
+            cursor: pointer;
+            border: none;
+        }
+        .button-services-infos:hover {
+            background: var(--Button-Intro-Hover);
+        }
+    }
+    .services-stats {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 285px;
+        width: 190px;
+        height: 56px;
+        gap: 63px;
+        margin-top: 106px;
+
+        .compagnie,
+        .langages,
+        .leads {
+            h2 {
+                color: var(--Dark-Blue);
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 56px;
+                letter-spacing: -0.5px;
+            }
+            p {
+                color: var(--Grey);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 2.5px;
+            }
+        }
+    }
+    .services-image {
+        width: 350px;
+        height: 600px;
+        position: absolute;
+        top: 185px;
+        left: 640px;
+        z-index: -1;
+    }
+}
+/* Section Arguments Styles */
+.arguments {
+    width: 100%;
+    height: 590px;
+    margin-top: 154px;
+    display: flex;
+
+    .arguments-fond {
+        display: flex;
+        width: 100%;
+        height: 545px;
+        border-radius: 15px;
+        background: var(--Dark-Blue);
+        margin-top: 45px;
+    }
+    .arguments-infos{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 350px;
+        height: 369px;
+        margin: 88px 125px 88px 634px;
+        
+        .arguments-titre {
+            color: var(--Cream-White);
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 56px;
+            letter-spacing: -0.5px;
+
+            .works {
+                font-weight: 700;
+            }
+        }
+        .arguments-para {
+            color: var(--Cream);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 35px;
+            letter-spacing: 0.1px;
+            margin-top: 40px;
+        }
+        .arguments-name {
+            color: var(--Cream-White);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -0.18px;
+            margin-top: 40px;
+        }
+        .arguments-taf {
+            color: var(--Cream);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 2.5px;
+        }
+    }
+    .arguments-image {
+        width: 359px;
+        height: 590px;
+        position: absolute;
+        top: 938px;
+        left: 288px;
+        z-index: 2;
+    }
+    .curved-line-2 {
+        position: absolute;
+        top: 1134px;
+        left: 684px;
+    }
+    .oval-fond  {
+        position: absolute;
+        top: 1034px;
+        left: 200px;
+        z-index: 1;
+    }
+}
+/* Section Contact Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 464px;
+    background: var(--Cream);
+    margin-top: -200px;
+
+    .footer-infos {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 32px;
+        justify-content: space-between;
+        margin-top: 360px;
+        margin-bottom: 72px;
+
+        .footer-para {
+            width: 125px;
+            color: var(--Grey);
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0.083px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 116px;
+            height: 20px;
+            margin: 6 0;
+
+            .social-link {
+                font-size: 0;
+            }
+        }
+    }
+}

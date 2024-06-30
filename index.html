@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <title>Frontend Mentor | Suite landing page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <herder>
-      <img src="./assets/logo.svg" alt="">
-      <button type="button">Request Beta Access</button>
-    </herder>
-    <section class="intro">
-      <div>
+    <header>
+      <img class="logo-header" src="./assets/logo.svg" alt="logo du site">
+      <button class="button-header" type="button">Request Beta Access</button>
+    </header>
+    <section class="services">
+      <div class="curved-line">
         <img src="./assets/pattern-curved-line-1.svg" alt="image d'un rait incurvé vers le haut">
       </div>
-      <div>
-        <h1>A <span>super solution</span> for your <span>business.</span></h1>
-        <p>
+      <div class="services-infos">
+        <h1 class="services-titre">A <span>super solution</span> for your <span>business.</span></h1>
+        <p class="services-para">
           Our marketing and sales automations help you scale your outreach to 
           get more leads for your company.
         </p>
-        <button type="button">Request Beta Access</button>
+        <button class="button-services-infos" type="button">Request Beta Access</button>
       </div>
-      <div>
+      <div class="services-image">
         <img src="./assets/image-hero-portrait.webp" alt="Image d'un telephone portable">
       </div>
-      <div>
+      <div class="services-stats">
         <div class="compagnie">
           <h2>2K+</h2>
           <p>Companies</p>
@@ -42,28 +42,31 @@
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <div>
-          <h3>It just works.</h3>
-          <p>
+    <section class="arguments">
+      <div class="arguments-fond">
+        <div class="arguments-infos">
+          <h3 class="arguments-titre">It just <span class="works">works.</span></h3>
+          <p class="arguments-para">
             “I really like how it is an all-in-one solution that handle many of 
             the tasks that you would normally need separate tools to do the same 
             job. This thing is a miracle worker.”
           </p>
-          <p>
+          <p class="arguments-name">
             Jeremy Robinson
+          </p>
+          <p class="arguments-taf">
             CMO, Fylo
           </p>
+          <img class="arguments-image" src="./assets/image-jeremy-large.webp" alt="">
+          <img class="curved-line-2" src="./assets/pattern-curved-line-2.svg" alt="">
+          <img class="oval-fond" src="./assets/oval.svg" alt="">
         </div>
       </div>
-      <img src="./assets/image-jeremy-large.webp" alt="">
-      <img src="./assets/pattern-curved-line-2.svg" alt="">
     </section>
     <footer>
-      <img src="./assets/logo.svg" alt="">
-      <p>Copyright - Suite</p>
-      <div>
+      <div class="footer-infos">
+        <img src="./assets/logo.svg" alt="">
+        <p class="footer-para">Copyright - Suite</p>
         <nav>
           <a href="#"><img src="./assets/icon-facebook.svg" alt="">facebook</a>
           <a href="#"><img src="./assets/icon-twitter.svg" alt="">twitter</a>
